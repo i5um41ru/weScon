@@ -1,4 +1,4 @@
-# wswp (web scraping with python)
+# wswp (*web scraping with python*)
 Ini adalah repo yang menyimpan skrip pelajaran saya akan *web scraping* dengan
 Python.
 
@@ -15,6 +15,9 @@ Untuk materi disini kita memerlukan *BeautifulSoup4* untuk memasang pustaka
 tersebut gunakan perintah berikut pada terminal:
 
 ```bash
-$ sudo apt-get install python-bs4  # untuk Python2.x
+$ sudo apt-get install  python-bs4 # untuk Python2.x
 $ sudo apt-get install python3-bs4 # untuk Python3.x
+
+$ pip  install beautifulsoup4      # untuk Python2.x
+$ pip3 install beautifulsoup4      # untuk Python3.x
 ```
