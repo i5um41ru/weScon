@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup as bs
 lokasi_url = urlopen('http://wikipedia.org')
 objek_bs = bs(lokasi_url, 'html')
 for teks in objek_bs.findAll('span', {'class': 'other-project-title'}):
-  print(x.get_text())
+    print(x.get_text())
 ```
 
 ## find() dan findAll() pada BeautifulSoup

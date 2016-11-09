@@ -9,19 +9,19 @@ from urllib.error import HTTPError
 from bs4 import BeautifulSoup as bs
 
 def gaetJudul(url):
-  try:
-    lok_url = urlopen(url)
-  except HTTPError as e:
-    return None
-  try:
-    obj_bs  = bs(lok_url.read())
-    judul   = obj_bs.body.h1.text
-  except Attribute.err as e:
-    return None
-  return judul
+    try:
+        lok_url = urlopen(url)
+    except HTTPError as e:
+        return None
+    try:
+        obj_bs  = bs(lok_url.read())
+        judul   = obj_bs.body.h1.text
+    except Attribute.err as e:
+        return None
+    return judul
 
 judul = gaetJudul('https://github.com')
 if judul == None:
-  print('Judul tidak ditemukan!')
+    print('Judul tidak ditemukan!')
 else:
-  print(judul)
+    print(judul)
