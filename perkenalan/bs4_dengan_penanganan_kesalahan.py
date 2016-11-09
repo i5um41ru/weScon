@@ -1,4 +1,4 @@
-# Namas asli berkas : perkenalan_dengan_bs4.py
+# Namas asli berkas : bs4_dengan_penanganan_kesalahan.py
 # Penulis           : Ismail Sudirman
 # Alamat surel      : ismailsudirman83@gmail.com
 # Web               : www.skeffo.com

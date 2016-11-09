@@ -77,3 +77,9 @@ Gunakan opsi kikuk berikut:
 objek_bs.findAll(class_="hijau")         # atau dapat pula dengan contoh
 objek_bs.findAll("", {"class": "hijau'}) # yang satu ini
 ```
+
+Untuk memilih elemen secara lebih spesifik:
+
+```python
+objek_bs.find("table", {"id": "bola"}).tr
+```

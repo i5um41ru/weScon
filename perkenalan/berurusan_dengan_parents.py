@@ -1,4 +1,4 @@
-# Namas asli berkas : berurusan_dengan_sibling.py
+# Namas asli berkas : berurusan_dengan_parents.py
 # Penulis           : Ismail Sudirman
 # Alamat surel      : ismailsudirman83@gmail.com
 # Web               : www.skeffo.com
@@ -10,5 +10,5 @@ from bs4 import BeautifulSoup as bs
 lokasi_url = urlopen('http://pythonscraping.com/pages/page3.html')
 objek_bs   = bs(lokasi_url)
 
-for saudara in objek_bs.find("table", {"id": "giftList"}).tr.next_siblings:
-    print(saudara)
+print(objek_bs.find("img", {"src": "../img/gifts/img1.jpg"
+                           }).parent.previous_sibling.get_text())
