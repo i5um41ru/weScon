@@ -17,7 +17,11 @@ tersebut gunakan perintah berikut pada terminal:
 ```bash
 $ sudo apt-get install  python-bs4 # untuk Python2.x
 $ sudo apt-get install python3-bs4 # untuk Python3.x
+```
 
+Atau bila menggunakan pip:
+
+```bash
 $ pip  install beautifulsoup4      # untuk Python2.x
 $ pip3 install beautifulsoup4      # untuk Python3.x
 ```

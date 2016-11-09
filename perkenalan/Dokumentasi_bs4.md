@@ -62,3 +62,18 @@ print(semuaTeks[0].get_text())
 objek_bs.findAll(id="teks")
 objek_bs.findAll("", {"id": "teks"})
 ```
+
+Harap diperhatikan bahwa penggunaan contoh berikut pada *kwarg* akan 
+menghasilkan pesan kesalahan kesalahan karena `class` merupakan fungsi bawaan
+pada Python:
+
+```python
+objek_bs.findAll(class="hijau") # Kesalahan!
+```
+
+Gunakan opsi kikuk berikut:
+
+```python
+objek_bs.findAll(class_="hijau")         # atau dapat pula dengan contoh
+objek_bs.findAll("", {"class": "hijau'}) # yang satu ini
+```
